@@ -11,13 +11,14 @@
 
 char *my_strlowcase(char *str)
 {
-    int len = my_strlen(&str);
     int i;
 
-    for (i = 0; i < len; i++) {
+    while(str[i] != '\0') {
         if (str[i] >= 65 && str[i] <= 90) {
             str[i] = str[i] + 32;
         }
-        return 0;
+        i++;
     }
+    return 0;
 }
+
