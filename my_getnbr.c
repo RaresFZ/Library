@@ -17,15 +17,15 @@ int my_getnbr(char const *str)
     while (str[i] == '+' || str[i] == '-') {
         if (str[i] == '-') {
             sign = sign * -1;
-        i++;
         }
+        i++;
     }
     while (str[i] != '\0') {
         if (str[i] >= '0' && str[i] <= '9') {
             nb = nb * 10;
             nb = nb + str[i] - '0';
             i++;
-                } else {
+        } else {
             return (nb * sign);
         }
     }
