@@ -11,7 +11,7 @@
 
 char *my_strupcase(char *str)
 {
-    int i = 1;
+    int i = 0;
 
     while (str[i] != '\0') {
         if (str[i] >= 97 && str[i] <= 122) {
