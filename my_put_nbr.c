@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_putnbr.c
+** my_put_nbr.c
 ** File description:
-** blablablabla
+** A function that put numbers
 */
 
 #include <stdio.h>
@@ -13,7 +13,10 @@ int length(int nb)
     int len = 0;
     int number = nb;
 
-    while (number != 0) {
+    if (nb == 0) {
+        len = 1;
+    }
+    while (number > 0) {
         len++;
         number = number / 10;
     }
